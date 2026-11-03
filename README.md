@@ -51,11 +51,12 @@ One account, every potato. Sign in once at [potatoverse.cloud](https://potatover
 | [**Potato Farm**](https://farm.potatoverse.cloud) | Grow your own potatobot. A hosted AI agent on its own VM, provisioned with Terraform, paid for with Stripe, brain of your choice. The farm fits five. | ![](https://img.shields.io/website?url=https%3A%2F%2Ffarm.potatoverse.cloud%2Fhealthz&up_message=growing&down_message=fallow&up_color=e8b14a&down_color=7d6a56&label=&style=flat-square) |
 | [**Sweet Potato**](https://sweet.potatoverse.cloud) | Five shots a day. Make them count. Upload a photo, an AI scores it out of 100, you earn Potato Chips. | ![](https://img.shields.io/website?url=https%3A%2F%2Fsweet.potatoverse.cloud%2Fhealthz&up_message=scoring&down_message=asleep&up_color=ec5a9c&down_color=7d6a56&label=&style=flat-square) |
 | [**Potato Sack**](https://sack.potatoverse.cloud) | Your sporty spud running coach. Longest run in, today's pace out. Connects to Strava so it knows whether you're a bit mashed or full of steam. | ![](https://img.shields.io/website?url=https%3A%2F%2Fsack.potatoverse.cloud%2Fhealthz&up_message=pacing&down_message=resting&up_color=4ade80&down_color=7d6a56&label=&style=flat-square) |
+| [**openGym**](https://gym.potatoverse.cloud) | The gym. Sets, reps, body weight, a passkey instead of a password, and an AI coach with your own key. Upstream is [DuarteSantos8/openGym](https://github.com/DuarteSantos8/openGym), hosted here unmodified. Used daily. | ![](https://img.shields.io/website?url=https%3A%2F%2Fgym.potatoverse.cloud%2Fapi%2Fhealth&up_message=lifting&down_message=rest_day&up_color=a3e635&down_color=7d6a56&label=&style=flat-square) |
 | [**Couch Potato**](https://couch.potatoverse.cloud) | The serious business of doing absolutely nothing. A browser game about a potato on a sofa, framed as a cloud-ops dashboard. Snacks nominal. | ![](https://img.shields.io/website?url=https%3A%2F%2Fcouch.potatoverse.cloud%2Fhealthz&up_message=loafing&down_message=offline&up_color=5cc8ff&down_color=7d6a56&label=&style=flat-square) |
 | [**Hot Potato**](https://admin.potatoverse.cloud) | The control room. The delete button you handle with oven mitts. | ![](https://img.shields.io/website?url=https%3A%2F%2Fadmin.potatoverse.cloud%2Fhealthz&up_message=warm&down_message=cold&up_color=f97316&down_color=7d6a56&label=&style=flat-square) |
 | [**potatoverse.cloud**](https://potatoverse.cloud) | The front door. The catalogue, plus Potaccounts: GitHub, Google, or a magic link, and one `@handle` across the whole verse. | ![](https://img.shields.io/website?url=https%3A%2F%2Fpotatoverse.cloud%2Fhealthz&up_message=open&down_message=closed&up_color=f4ead9&down_color=7d6a56&label=&style=flat-square) |
 
-*Status badges hit each spud's `/healthz` live. If one says "fallow", I already know.*
+*Status badges hit each app's health endpoint live. If one says "fallow", I already know.*
 
 ---
 
@@ -67,7 +68,7 @@ One account, every potato. Sign in once at [potatoverse.cloud](https://potatover
 >
 > 🏡 &nbsp; **Potato Plot** — every flat sold near Hampstead tube for two years, one row per flat, and a scorer that says whether a new listing is a good deal. Research, not a public spud yet.
 >
-> 🏃 &nbsp; **Potato Sack v2** — Strava-calibrated effort levels. Raring is your best recent run, Tired is your seventh. The formula is Riegel's, the honesty is yours.
+> 🏋️ &nbsp; **Strava → gym sync** — every run on Strava is filed into openGym as a cardio entry the next morning. A headless Claude does it at 05:10 on a timer; rerunning adds nothing twice.
 
 ---
 
